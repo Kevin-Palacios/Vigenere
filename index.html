@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenere</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <div align="center">
+        <table border="1">
+            <tr>
+                <td width="200" align="center" colspan="2">
+                <p>
+                    Este cifrado es un ejemplo del cifrado de Cifrado Viggenere
+                </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ingresa el mensaje que quieras cifrar o descifrar
+                </td>
+                <td>
+                <input type="text" id="cadena" onkeypress="return valideKey2(event);">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ingresa la clave del cifrado
+                </td>
+                <td>
+                    <input type="text"  id="pos" onkeypress="return valideKey(event);" onpaste="return false;" ondrop="return false;" min="0" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>
+                    <input class="boton" type="button" value="Cifrar" onclick="longitudc()">
+                
+                </p>
+                </td>
+                <td bgColor="lightgreen" valign="top" width="80" height="19" rowspan="2">
+                    <textarea id="res" onpaste="return false;" ondrop="return false;"></textarea>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>
+                    <input class="boton" type="button" value="Decifrar" onclick="longitudd()">        
+                </p>
+                </td>
+                
+            </tr>
+        </table>
+                                
+        
+    </div>
+    <script src="js/logica.js"></script>
+    <script src="js/validarLetras.js"></script>
+    <script src="js/validarNumerosLetras.js"></script>
+</body>
+</html>
